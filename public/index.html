@@ -1,0 +1,833 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/index.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<title>M-TAP GROUP</title>
+	</head>
+	<body class="relative overflow-y-auto overflow-x-hidden">
+		<!--HEADER-->
+		<header
+			class="h-16 items-center justify-between px-2 shadow-md sticky z-[999999] bg-white flex">
+			<div
+				id="logo"
+				class="h-14 w-max-content overflow-hidden grid place-items-center">
+				<h1 class="font-bold text-[26px]">M<span class="">TAP</span> GROUP</h1>
+			</div>
+
+			<!-- Hamburger menu button -->
+			<div class="flex h-auto items-end justify-end p-2 relative">
+				<!-- Hamburger Icon -->
+				<div
+					id="hamburger"
+					class="flex flex-col gap-1.5 cursor-pointer lg:hidden">
+					<span class="h-[5px] w-6 bg-black transition-transform"></span>
+					<span class="h-[5px] w-8 bg-black transition-transform"></span>
+					<span class="h-[5px] w-6 bg-black transition-transform"></span>
+				</div>
+
+				<!-- Main Navigation (Desktop Only) -->
+				<ul id="menu" class="hidden lg:flex w-auto flex h-12 gap-5">
+					<li class="navLi grid place-items-center active:text-blue-700">
+						<a href="#home">HOME</a>
+					</li>
+					<li class="navLi grid place-items-center active:text-blue-700">
+						<a href="#about">ABOUT US</a>
+					</li>
+					<li class="navLi grid place-items-center active:text-blue-700">
+						<a href="#services">SERVICES</a>
+					</li>
+					<li class="navLi grid place-items-center active:text-blue-700">
+						<a href="#team">MEET THE TEAM</a>
+					</li>
+					<li class="navLi grid place-items-center active:text-blue-700">
+						<a href="#contactUs">CONTACT US</a>
+					</li>
+					<li class="navLi grid place-items-center active:text-blue-700">
+						<a href="#certifications">CERTIFICATIONS &amp; ACCREDITATION</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<!-- Mobile Navigation (Hidden by Default) -->
+		<nav
+			id="mobile-menu"
+			class="hidden fixed top-16 left-0 w-full bg-gray-100 h-[calc(100svh-theme(height.16))] flex-col justify-center items-center z-[999998] overflow-y-auto lg:hidden">
+			<ul class="flex flex-col items-center gap-8 p-6">
+				<li class="navLi text-lg font-medium">
+					<a href="#home">HOME</a>
+				</li>
+				<li class="navLi text-lg font-medium">
+					<a href="#about">ABOUT US</a>
+				</li>
+				<li class="navLi text-lg font-medium">
+					<a href="#services">SERVICES</a>
+				</li>
+				<li class="navLi text-lg font-medium">
+					<a href="#team">MEET THE TEAM</a>
+				</li>
+				<li class="navLi text-lg font-medium">
+					<a href="#contactUs">CONTACT US</a>
+				</li>
+				<li class="navLi text-lg font-medium">
+					<a href="#certifications">CERTIFICATIONS &amp; ACCREDITATION</a>
+				</li>
+			</ul>
+		</nav>
+		<!--HERO SECTION-->
+		<section
+			id="home"
+			class="relative bg-gray-100 h-screen flex flex-col justify-center items-center text-center px-4 sm:px-8">
+			<!-- Background image -->
+			<div id="heroSection" class="absolute inset-0 bg-cover bg-center"></div>
+			<div class="absolute inset-0 bg-black bg-opacity-60"></div>
+			<!-- Adjusted overlay opacity -->
+			<!-- Content -->
+			<div id="heroContent class="relative z-10 max-w-3xl mx-auto p-6 text-center text-white">
+				<h1 class="text-slate-200 text-4xl sm:text-5xl font-extrabold leading-tight" data-animate>
+					Empowering Africa's
+					<span class="text-blue-600">Energy Transition</span>
+				</h1>
+				<p class="mt-4 text-lg sm:text-xl  text-white" data-animate>
+					MTAP Group21 combines 15+ years of expertise in
+					<span class="font-bold colorCycle">renewable energy</span> and
+					<span class="font-bold">electrical engineering</span> to deliver
+					sustainable solutions for a brighter future.
+				</p>
+				<div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
+					<a
+						href="#services"
+						id="servicesCallToAction"
+						class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition"
+						data-animate
+						>Explore Our Services</a
+					>
+					<a
+						href="#contactUs"
+						class="bg-white text-blue-600 border border-blue-600 px-6 py-3 rounded-lg shadow-md hover:bg-blue-50 transition"
+						data-animate
+						>Contact Us</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="py-16 bg-gray-100 text-gray-800">
+			<div class="container mx-auto px-6 sm:px-12 lg:px-20">
+				<!-- Section Title -->
+				<h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12">
+					About <span class="text-blue-600">MTAP Group21</span>
+				</h2>
+				<!-- Content Grid -->
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+					<!-- Left Column: Who We Are -->
+					<div>
+						<h3 class="text-2xl font-bold mb-4">Who We Are</h3>
+						<p class="text-lg leading-relaxed">
+							MTAP Group21 Pty Ltd is a dynamic electrical engineering and
+							renewable energy company, combining over
+							<strong>15 years of expertise</strong> from its leadership team.
+							Though newly founded, MTAP Group21 is poised to become a future
+							leader in Africa's energy sector, specializing in:
+						</p>
+						<ul class="list-disc list-inside mt-4 text-lg">
+							<li>Solar rooftop installations</li>
+							<li>Energy Performance Certification (EPC)</li>
+							<li>Electrical installations in hazardous areas</li>
+						</ul>
+					</div>
+					<!-- Right Column: Vision and Mission Highlight -->
+					<div>
+						<div
+							class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg shadow-md">
+							<h3 class="text-2xl font-bold text-blue-600 mb-4">Our Vision</h3>
+							<p class="text-lg leading-relaxed">
+								To lead the renewable energy and electrical engineering sectors
+								by providing innovative, sustainable solutions that drive
+								Africa’s energy transition and empower communities through job
+								creation and skill development.
+							</p>
+						</div>
+						<div
+							class="bg-green-50 border-l-4 border-green-600 p-6 rounded-lg shadow-md mt-6">
+							<h3 class="text-2xl font-bold text-green-600 mb-4">
+								Our Mission
+							</h3>
+							<p class="text-lg leading-relaxed">
+								We are committed to delivering cost-effective, environmentally
+								sustainable solutions, including:
+							</p>
+							<ul class="list-disc list-inside mt-4 text-lg">
+								<li>Solar installations</li>
+								<li>Energy audits and certification</li>
+								<li>Electrical services for various industries</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="services" class="py-16 bg-white text-gray-800">
+			<div class="container mx-auto px-6 sm:px-12 lg:px-20">
+				<!-- Section Title -->
+				<h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12">
+					Our <span class="text-blue-600">Services</span>
+				</h2>
+
+				<!-- Services Grid -->
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<!-- Service Card 1: Solar PV Installations -->
+					<div
+						class="service-card relative bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden">
+						<!-- Image Slider -->
+						<div class="overflow-hidden relative h-48">
+							<div class="absolute flex slide-animation">
+								<img
+									src="https://cdn.pixabay.com/photo/2021/12/10/11/52/solar-power-6860359_1280.jpg"
+									alt="Solar Installation"
+									class="object-cover w-full h-full lazyload" />
+								<img
+									src="https://cdn.pixabay.com/photo/2018/06/30/16/25/solar-panels-3507949_1280.jpg"
+									alt="Ground Mounted Solar Systems"
+									class="object-cover lazyload" />
+								<img
+									src="https://cdn.pixabay.com/photo/2024/02/14/22/47/pylon-8574348_1280.jpg"
+									alt="Off-Grid and Grid-Tied Systems"
+									class="object-cover lazyload" />
+								<img
+									src="https://cdn.pixabay.com/photo/2013/03/26/06/44/electricity-meter-96863_1280.jpg"
+									alt="Power Storage"
+									class="object-cover lazyload" />
+								<img
+									src="https://th.bing.com/th/id/R.c5ffebe012ebcd770676682540049d68?rik=6lGD%2br4i9K21Ew&riu=http%3a%2f%2fsolargeyserslimpopo.co.za%2fgreen-roof-solar.jpg&ehk=0NH0CbJLNujoK4aqgHyMmrFObXcwGU8Ewh4BJOYy1MA%3d&risl=&pid=ImgRaw&r=0"
+									alt="Solar geysers and thermal systems"
+									class="object-cover lazyload" />
+								<img
+									src="https://cdn.pixabay.com/photo/2014/12/17/07/28/businesswoman-571153_1280.jpg"
+									alt="Commissioning and issuance of Certificates of Compliance (CoC)"
+									class="object-cover lazyload" />
+							</div>
+						</div>
+
+						<!-- Content Below Images -->
+						<div class="p-6">
+							<h3 class="text-xl font-bold text-blue-600">
+								Solar PV Installations
+							</h3>
+							<p class="text-gray-600 mt-2">
+								Advanced solar solutions for both residential and commercial
+								applications.
+							</p>
+
+							<!-- List of Services -->
+							<ul class="list-disc list-inside mt-4 text-gray-700">
+								<li>Solar rooftop installations (Residential & Commercial)</li>
+								<li>Ground-mounted solar systems and solar tracking systems</li>
+								<li>Off-grid and grid-tied systems</li>
+								<li>
+									Backup power solutions, including UPS and generator
+									installations
+								</li>
+								<li>Solar geysers and thermal systems</li>
+								<li>
+									Commissioning and issuance of Certificates of Compliance (CoC)
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Service Card 2: Electrical Installations for Hazardous Areas -->
+					<div
+						class="service-card relative bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden">
+						<!-- Image Slider -->
+						<div class="overflow-hidden relative h-48">
+							<div class="absolute flex slide-animation">
+								<img
+									src="https://cdn.pixabay.com/photo/2020/04/16/19/32/danger-5052097_960_720.jpg"
+									alt="Hazardous Area 1"
+									class="object-cover lazyload" />
+								<img
+									src="https://th.bing.com/th/id/R.6ab3723c5282576b5182be6b3e8d305a?rik=3%2fTEh1oT8fTHBg&riu=http%3a%2f%2fwww.albahar.com%2fwp-content%2fuploads%2f2018%2f08%2fA007537.jpg&ehk=sYZB%2fNWYMU8edTzNSu4vBUO8PSV3AfQnr1w3bwKRp68%3d&risl=&pid=ImgRaw&r=0"
+									alt="Generator"
+									class="object-cover lazyload" />
+								<img
+									src="https://cdn.pixabay.com/photo/2016/11/21/12/36/broken-1845107_960_720.jpg"
+									alt="Hazardous Area 3"
+									class="object-cover lazyload" />
+								<img
+									src="https://www.lyttleco.com/wp-content/uploads/2020/06/2018-06-06-11.51.29-scaled.jpg"
+									alt="Hazardous Area 3"
+									class="object-cover lazyload" />
+							</div>
+						</div>
+
+						<!-- Content Below Images -->
+						<div class="p-6">
+							<h3 class="text-xl font-bold text-blue-600">
+								Electrical Installations for Hazardous Areas
+							</h3>
+							<p class="text-gray-600 mt-2">
+								Safe electrical systems and maintenance for hazardous areas like
+								refueling sites.
+							</p>
+
+							<!-- List of Services -->
+							<ul class="list-disc list-inside mt-4 text-gray-700">
+								<li>
+									Electrical installations and maintenance for hazardous areas
+									including refueling sites and service stations
+								</li>
+								<li>
+									Generator and UPS installations, synchronization with grid
+									systems
+								</li>
+								<li>Hazardous area electrical installations</li>
+								<li>
+									General electrical maintenance and upgrades for fuel stations
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Service Card 3: Energy Performance Certificates (EPC) -->
+					<div
+						class="service-card relative bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden">
+						<!-- Image Slider -->
+						<div class="overflow-hidden relative h-48">
+							<div class="absolute flex slide-animation">
+								<img
+									src="https://cdn.pixabay.com/photo/2019/05/08/20/15/audit-4189560_1280.jpg"
+									alt="Energy Audit"
+									class="object-cover lazyload" />
+								<img
+									src="https://cdn.pixabay.com/photo/2018/07/22/11/34/certificate-3554369_1280.jpg"
+									alt="certified document"
+									class="object-cover lazyload" />
+								<img
+									src="https://cdn.pixabay.com/photo/2022/10/05/07/08/gavel-7499911_1280.jpg"
+									alt="law"
+									class="object-cover lazyload" />
+							</div>
+						</div>
+
+						<!-- Content Below Images -->
+						<div class="p-6">
+							<h3 class="text-xl font-bold text-blue-600">
+								Energy Performance Certificates (EPC)
+							</h3>
+							<p class="text-gray-600 mt-2">
+								Certified energy audits and performance evaluations to ensure
+								regulatory compliance.
+							</p>
+
+							<!-- List of Services -->
+							<ul class="list-disc list-inside mt-4 text-gray-700">
+								<li>Energy audits for residential and commercial buildings</li>
+								<li>
+									Issuing certified Energy Performance Certificates for
+									compliance
+								</li>
+								<li>Ensuring compliance with South African regulations</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Service Card 4: General Electrical Installations -->
+					<div
+						class="service-card relative bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden">
+						<!-- Image Slider -->
+						<div class="overflow-hidden relative h-48">
+							<div class="absolute flex slide-animation">
+								<img
+									src="https://cdn.pixabay.com/photo/2020/07/11/08/35/automation-5393191_960_720.jpg"
+									alt="wiring"
+									class="object-cover lazyload" />
+								<img
+									src="https://th.bing.com/th/id/R.c83030104e79bc3018e46e33391d25bd?rik=0AmP4XdpPw3zaA&pid=ImgRaw&r=0"
+									alt="Electrical Panel"
+									class="object-cover lazyload" />
+								<img
+									src="https://theexchange.africa/wp-content/uploads/2021/12/ug-1.jpg"
+									alt="General Electrical"
+									class="object-cover lazyload" />
+							</div>
+						</div>
+
+						<!-- Content Below Images -->
+						<div class="p-6">
+							<h3 class="text-xl font-bold text-blue-600">
+								General Electrical Installations
+							</h3>
+							<p class="text-gray-600 mt-2">
+								Comprehensive electrical solutions for various sectors,
+								including maintenance.
+							</p>
+
+							<!-- List of Services -->
+							<ul class="list-disc list-inside mt-4 text-gray-700">
+								<li>Domestic and industrial wiring installations</li>
+								<li>
+									Electrical panel installations, upgrades, and replacements
+								</li>
+								<li>General electrical maintenance and troubleshooting</li>
+								<li>General electrification projects</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Service Card 5: Training & Skills Development -->
+					<div
+						class="service-card relative bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden">
+						<!-- Image Slider -->
+						<div class="overflow-hidden relative h-48">
+							<div class="absolute flex slide-animation">
+								<img
+									src="https://th.bing.com/th/id/OIP.7ZDqREPSA0jpeNJYH1UeAQHaE6?rs=1&pid=ImgDetMain"
+									alt="Training & Skills 1"
+									class="object-cover lazyload" />
+								<img
+									src="https://theconstructor.org/wp-content/uploads/2022/08/What-is-Energy-Performance-Certificate-EPC-for-Buildings.png"
+									alt="Training & Skills 2"
+									class="object-cover lazyload" />
+								<img
+									src="https://th.bing.com/th/id/OIP.tXlPsQtm0ExMShWxUU27twHaEK?rs=1&pid=ImgDetMain"
+									alt="Training & Skills 3"
+									class="object-cover lazyload" />
+							</div>
+						</div>
+
+						<!-- Content Below Images -->
+						<div class="p-6">
+							<h3 class="text-xl font-bold text-blue-600">
+								Training & Skills Development
+							</h3>
+							<p class="text-gray-600 mt-2">
+								Empowering the next generation with hands-on skills in solar and
+								electrical fields.
+							</p>
+
+							<!-- List of Services -->
+							<ul class="list-disc list-inside mt-4 text-gray-700">
+								<li>
+									Solar installation training programs (theoretical & practical)
+								</li>
+								<li>EPC practitioner training and certification</li>
+								<li>
+									Youth-focused skills development programs in electrical and
+									renewable energy sectors
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="team" class="py-16 bg-gray-100 text-gray-800">
+			<div class="container mx-auto px-6 sm:px-12 lg:px-20">
+				<!-- Section Title -->
+				<h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12">
+					Meet <span class="text-blue-600">Our Team</span>
+				</h2>
+
+				<!-- Team Cards Grid -->
+				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+					<!-- Team Member: Mandisa Motha -->
+					<div
+						class="team-card relative bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden p-6"
+						data-tilt>
+						<!-- Image Element -->
+						<div
+							class="card-image absolute inset-0 bg-gray-100 bg-cover bg-center opacity-0 transition-opacity duration-300"
+							style="background-image: url('/path/to/mandisa-motha.jpg')"></div>
+
+						<!-- Text Content -->
+						<h3 class="text-xl font-bold text-blue-600 relative z-10">
+							Mandisa Motha
+						</h3>
+						<p class="text-gray-600 mt-2 font-semibold relative z-10">
+							Chief Executive Officer (CEO)
+						</p>
+						<ul
+							class="list-disc list-inside mt-4 text-gray-700 text-sm relative z-10">
+							<li>BEng Degree in Chemical Engineering</li>
+							<li>
+								Passionate about renewable energy and sustainable solutions
+							</li>
+							<li>
+								Extensive leadership experience focusing on environmental impact
+							</li>
+						</ul>
+					</div>
+
+					<!-- Team Member: Phumelele Motha -->
+					<div
+						class="team-card relative bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden p-6"
+						data-tilt>
+						<div
+							class="card-image absolute inset-0 bg-gray-100 bg-cover bg-center opacity-0 transition-opacity duration-300"
+							style="
+								background-image: url('/path/to/phumelele-motha.jpg');
+							"></div>
+
+						<h3 class="text-xl font-bold text-blue-600 relative z-10">
+							Phumelele Motha
+						</h3>
+						<p class="text-gray-600 mt-2 font-semibold relative z-10">
+							Chief Financial Officer (CFO)
+						</p>
+						<ul
+							class="list-disc list-inside mt-4 text-gray-700 text-sm relative z-10">
+							<li>BEng Degree in Metallurgical Engineering</li>
+							<li>
+								6+ years in extractive metallurgy and financial management
+							</li>
+							<li>
+								Expert in energy storage technologies and financial strategy
+							</li>
+						</ul>
+					</div>
+
+					<!-- Team Member: Thabiso Mahlangu -->
+					<div
+						class="team-card relative bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden p-6"
+						data-tilt>
+						<div
+							class="card-image absolute inset-0 bg-gray-100 bg-cover bg-center opacity-0 transition-opacity duration-300"
+							style="
+								background-image: url('/path/to/thabiso-mahlangu.jpg');
+							"></div>
+
+						<h3 class="text-xl font-bold text-blue-600 relative z-10">
+							Thabiso Mahlangu
+						</h3>
+						<p class="text-gray-600 mt-2 font-semibold relative z-10">
+							Chief Operations Officer (COO)
+						</p>
+						<ul
+							class="list-disc list-inside mt-4 text-gray-700 text-sm relative z-10">
+							<li>National Diploma in Electrical Engineering</li>
+							<li>
+								Over 9 years in electrical transmission and renewable energy
+							</li>
+							<li>Certified Renewable Energy Trainer and Assessor</li>
+						</ul>
+					</div>
+
+					<!-- Team Member: Amon Magor -->
+					<div
+						class="team-card relative bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden p-6"
+						data-tilt>
+						<div
+							class="card-image absolute inset-0 bg-gray-100 bg-cover bg-center opacity-0 transition-opacity duration-300"
+							style="background-image: url('/path/to/amon-magor.jpg')"></div>
+
+						<h3 class="text-xl font-bold text-blue-600 relative z-10">
+							Amon Magor
+						</h3>
+						<p class="text-gray-600 mt-2 font-semibold relative z-10">
+							Chief Technology Officer (CTO)
+						</p>
+						<ul
+							class="list-disc list-inside mt-4 text-gray-700 text-sm relative z-10">
+							<li>National Diploma in Electrical Engineering</li>
+							<li>5+ years in electrical systems within the mining sector</li>
+							<li>Skilled in electrical engineering applications</li>
+						</ul>
+					</div>
+
+					<!-- Team Member: Mashudu Mulaudzi -->
+					<div
+						class="team-card relative bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden p-6"
+						data-tilt>
+						<div
+							class="card-image absolute inset-0 bg-gray-100 bg-cover bg-center opacity-0 transition-opacity duration-300"
+							style="
+								background-image: url('/path/to/mashudu-mulaudzi.jpg');
+							"></div>
+
+						<h3 class="text-xl font-bold text-blue-600 relative z-10">
+							Mashudu Mulaudzi
+						</h3>
+						<p class="text-gray-600 mt-2 font-semibold relative z-10">
+							Senior Installation Technician
+						</p>
+						<ul
+							class="list-disc list-inside mt-4 text-gray-700 text-sm relative z-10">
+							<li>10+ years in electrical installations</li>
+							<li>Holder of a Wireman’s License</li>
+							<li>
+								Specializes in generator systems and hazardous environment
+								setups
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="competitiveAdvantage" class="py-16 bg-gray-100 text-gray-800">
+			<div class="container mx-auto px-6 sm:px-12 lg:px-20">
+				<!-- Section Title -->
+				<h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12">
+					Our <span class="text-blue-600">Competitive Advantage</span>
+				</h2>
+
+				<!-- Advantage Points Grid -->
+				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+					<!-- Point 1: Fuel Service Station Installations -->
+					<div class="advantage-point flex items-start gap-4">
+						<div
+							class="icon flex items-center justify-center w-14 h-14 bg-blue-600 text-white rounded-full">
+							<i class="fas fa-gas-pump text-xl"></i>
+						</div>
+						<div class="content">
+							<h3 class="text-xl font-bold text-gray-900">
+								Fuel Service Station Installations
+							</h3>
+							<p class="text-gray-700 mt-2">
+								MTAP Group21’s leadership team has significant experience in
+								electrical installations at hazardous areas, including hazardous
+								area electrical work, generator installations, and UPS systems.
+								This expertise positions us as a reliable partner for commercial
+								and industrial projects.
+							</p>
+						</div>
+					</div>
+
+					<!-- Point 2: Expertise in Solar Energy Solutions -->
+					<div class="advantage-point flex items-start gap-4">
+						<div
+							class="icon flex items-center justify-center w-14 h-14 bg-blue-600 text-white rounded-full">
+							<i class="fas fa-solar-panel text-xl"></i>
+						</div>
+						<div class="content">
+							<h3 class="text-xl font-bold text-gray-900">
+								Expertise in Solar Energy Solutions
+							</h3>
+							<p class="text-gray-700 mt-2">
+								Our team consists of certified engineers with deep expertise in
+								solar PV technology. We offer fully customized solar solutions
+								designed to maximize energy efficiency and reduce long-term
+								costs for clients.
+							</p>
+						</div>
+					</div>
+
+					<!-- Point 3: Comprehensive Service Offering -->
+					<div class="advantage-point flex items-start gap-4">
+						<div
+							class="icon flex items-center justify-center w-14 h-14 bg-blue-600 text-white rounded-full">
+							<i class="fas fa-tools text-xl"></i>
+						</div>
+						<div class="content">
+							<h3 class="text-xl font-bold text-gray-900">
+								Comprehensive Service Offering
+							</h3>
+							<p class="text-gray-700 mt-2">
+								MTAP Group21 offers end-to-end solutions for electrical and
+								renewable energy needs, including design, installation,
+								maintenance, and compliance certification. This makes us a
+								one-stop solution for businesses and residential clients alike.
+							</p>
+						</div>
+					</div>
+
+					<!-- Point 4: Commitment to Sustainability and Youth Development -->
+					<div class="advantage-point flex items-start gap-4">
+						<div
+							class="icon flex items-center justify-center w-14 h-14 bg-blue-600 text-white rounded-full">
+							<i class="fas fa-leaf text-xl"></i>
+						</div>
+						<div class="content">
+							<h3 class="text-xl font-bold text-gray-900">
+								Commitment to Sustainability and Youth Development
+							</h3>
+							<p class="text-gray-700 mt-2">
+								Our company is dedicated to reducing South Africa’s carbon
+								footprint while creating job opportunities and developing the
+								skills of young professionals. We aim to contribute positively
+								to both the environment and the economy.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="certifications" class="py-16 bg-white text-gray-800">
+			<div class="container mx-auto px-6 sm:px-12 lg:px-20">
+				<!-- Section Title -->
+				<h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12">
+					<span class="text-gray-800">Certifications </span>
+					<span class="text-blue-600">and Accreditation</span>
+				</h2>
+
+				<!-- Certifications and Experience Content -->
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+					<!-- Previous Experience -->
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-4">
+							Previous Experience in Installations and Training
+						</h3>
+						<p class="text-gray-700 mb-4">
+							Our leadership team has extensive experience in both installations
+							and training within the electrical sector. We have successfully
+							conducted training programs on Solar PV installations, equipping
+							trainees with practical skills needed for the growing renewable
+							energy industry. Our experience includes lecturing in Electrical
+							Infrastructure and Construction at TVET Colleges, where we have
+							trained students in:
+						</p>
+						<ul class="list-disc list-inside text-gray-700 mb-4">
+							<li>
+								Electrical engineering principles, including transformer systems
+							</li>
+							<li>Wiring regulations</li>
+							<li>Renewable energy technologies</li>
+						</ul>
+						<p class="text-gray-700">
+							In addition, we have managed complex electrical systems for fuel
+							service stations, hazardous area installations, and solar projects
+							for residential and commercial clients. These projects adhere to
+							stringent safety protocols and industry standards, enhancing
+							energy efficiency and sustainability.
+						</p>
+					</div>
+
+					<!-- Certifications -->
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-4">
+							Certifications and Accreditations
+						</h3>
+						<ul class="list-disc list-inside text-gray-700 space-y-2">
+							<li>Wireman’s License (Mashudu Mulaudzi)</li>
+							<li>Certified Solar PV Installers</li>
+							<li>Certified Train the Trainer Solar PV Installers</li>
+							<li>
+								Certified Train the Trainer Energy Performance Certificates
+								(EPC)
+							</li>
+							<li>
+								Accredited for issuing Energy Performance Certificates (EPC)
+							</li>
+							<li>
+								Issuance of Certificates of Compliance (CoC) for electrical
+								installations
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Conclusion -->
+				<div class="mt-12">
+					<h3 class="text-2xl font-bold text-gray-900 text-center mb-4">
+						Conclusion
+					</h3>
+					<p class="text-gray-700 text-center mx-auto max-w-4xl">
+						MTAP Group21 Pty Ltd is a new, vibrant entrant into the renewable
+						energy and electrical engineering sectors. With a combined
+						experience of over 15 years in solar installations, fuel service
+						station electrical systems, and hazardous area work, we are
+						well-equipped to offer tailored solutions that meet the diverse
+						needs of our clients. Our commitment to sustainability, job
+						creation, and technical excellence will drive our growth in South
+						Africa's energy sector.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="contactUs" class="py-16 bg-gray-100 text-gray-800">
+			<div class="container mx-auto px-6 sm:px-12 lg:px-20">
+				<!-- Section Title -->
+				<h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12">
+					Contact <span class="text-blue-600">Us</span>
+				</h2>
+
+				<!-- Contact Info & Form -->
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+					<!-- Contact Information -->
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
+						<p class="text-gray-700 mb-4">
+							Whether you're interested in our services or have any questions,
+							we're here to help. Reach out to us through the following contact
+							details:
+						</p>
+						<ul class="text-gray-700 space-y-3">
+							<li>
+								<strong>Email:</strong>
+								<a
+									href="mailto:info@mtpgroup.co.za"
+									class="text-blue-600 hover:underline"
+									>info@mtpgroup.co.za</a
+								>
+							</li>
+							<li>
+								<strong>Cell:</strong>
+								<a href="tel:+27672527745" class="text-blue-600 hover:underline"
+									>+27 67 252 7745</a
+								>,
+								<a href="tel:+27695059608" class="text-blue-600 hover:underline"
+									>+27 69 505 9608</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h3>
+						<div class="space-y-4">
+							<details>
+								<summary class="cursor-pointer text-lg font-medium text-blue-600">What services do you offer?</summary>
+								<p class="mt-2 text-gray-700">We specialize in renewable energy solutions like solar installations, electrical engineering, and more.</p>
+							</details>
+							<details>
+								<summary class="cursor-pointer text-lg font-medium text-blue-600">How can I get a quote?</summary>
+								<p class="mt-2 text-gray-700">Reach out to us via email or phone, and we'll provide a customized quote for your project.</p>
+							</details>
+							<details>
+								<summary class="cursor-pointer text-lg font-medium text-blue-600">Do you offer training?</summary>
+								<p class="mt-2 text-gray-700">Yes, we provide training programs in solar installation and energy certifications.</p>
+							</details>
+						</div>
+					</div>
+
+
+				</div>
+
+				<!-- Optional Google Maps Section -->
+				<div class="mt-16">
+					<h3 class="text-2xl font-bold text-gray-900 text-center mb-6">
+						Find Us
+					</h3>
+					<div
+						class="relative w-full h-64 rounded-lg shadow-md overflow-hidden">
+						  <iframe
+            title="Johannesburg Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115838.21621823274!2d27.985847334781336!3d-26.204103129529075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c1db3af4c0d%3A0xf3d7cbfd38d29bd9!2sJohannesburg%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1694873543618!5m2!1sen!2sus"
+            class="border-[0] absolute inset-0 w-full h-full"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<script src="./js/header.js"></script>
+		<script src="./js/servicesSection.js"></script>
+		<script src="./js/animations.js"></script>
+		<script src="./js/heroSection.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
+	</body>
+</html>

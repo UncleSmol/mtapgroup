@@ -1,0 +1,16 @@
+/* Icon Styling */
+.icon {
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for emphasis */
+}
+
+/* Advantage Content Hover Effect */
+.advantage-point:hover .icon {
+	background-color: #2563eb; /* Slightly darker blue on hover */
+	transform: scale(1.1); /* Add a subtle scaling effect */
+	transition: all 0.3s ease-in-out;
+}
+
+.advantage-point:hover .content h3 {
+	color: #2563eb; /* Change title color on hover */
+	transition: color 0.3s ease-in-out;
+}

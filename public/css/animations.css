@@ -1,0 +1,71 @@
+/*Animations Switch*/
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+[data-animate] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+[data-animate].in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+@keyframes slide {
+	0% {
+		transform: translateX(0);
+	}
+	20% {
+		transform: translateX(0);
+	}
+	25% {
+		transform: translateX(-20%);
+	}
+	45% {
+		transform: translateX(-20%);
+	}
+	50% {
+		transform: translateX(-40%);
+	}
+	70% {
+		-webkit-transform: translateX(-40%);
+		-moz-transform: translateX(-40%);
+		-ms-transform: translateX(-40%);
+		-o-transform: translateX(-40%);
+		transform: translateX(-40%);
+	}
+	75% {
+		transform: translateX(-60%);
+	}
+	95% {
+		transform: translateX(-60%);
+	}
+	100% {
+		transform: translateX(-80%);
+	}
+}
+
+.slide-animation {
+	display: flex;
+	width: 500%;
+
+	-webkit-animation: slide 25s infinite ease-in-out;
+	animation: slide 25s infinite ease-in-out;
+	-webkit-transition: transform 3s ease-in-out;
+	-moz-transition: transform 3s ease-in-out;
+	-ms-transition: transform 3s ease-in-out;
+	-o-transition: transform 3s ease-in-out;
+	transition: transform 3s ease-in-out;
+}
+
+.slide-animation img {
+	width: 20%; /* Each image takes up 20% of the container */
+	object-fit: cover; /* Ensures the image fits inside the container without stretching */
+}

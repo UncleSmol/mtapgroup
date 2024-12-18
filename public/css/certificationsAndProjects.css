@@ -1,0 +1,21 @@
+/* Certifications Section Styling */
+#certifications {
+	font-family: Arial, sans-serif;
+}
+
+/* Section Title Styling */
+#certifications h2 {
+	color: #1e3a8a; /* Dark blue for emphasis */
+}
+
+/* List Styling */
+#certifications ul {
+	padding-left: 1.5rem; /* Indent for list items */
+}
+
+/* Grid Columns for Large Screens */
+@media (min-width: 768px) {
+	#certifications .grid {
+		gap: 16px; /* Spacing between columns */
+	}
+}

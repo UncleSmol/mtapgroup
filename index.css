@@ -1,0 +1,13 @@
+/*CSS Modules Imports*/
+@import "./public/css/header.css";
+@import "./public/css/heroSection.css";
+@import "./public/css/animations.css";
+@import "./public/css/servicesSection.css";
+@import "./public/css/competitiveAdvantages.css";
+@import "./public/css/certificationsAndProjects.css";
+@import "./public/css/contactUs.css";
+@import "./public/css/aboutUs.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

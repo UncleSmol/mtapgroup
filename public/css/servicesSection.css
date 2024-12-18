@@ -1,0 +1,70 @@
+/* Team Card Styling */
+.team-card {
+	transform-style: preserve-3d; /* Enable 3D effects */
+	transition: transform 0.2s ease-in-out; /* Smooth return to normal */
+	cursor: pointer; /* Indicate interactivity */
+}
+
+/* General Styling for the Team Section */
+#team {
+	font-family: Arial, sans-serif; /* Adjust font as needed */
+}
+
+/* Team Card Styling */
+.team-card {
+	position: relative;
+	overflow: hidden; /* Ensure content stays within bounds */
+	transform-style: preserve-3d; /* Enable 3D effects */
+	cursor: pointer; /* Indicate interactivity */
+	transition: transform 0.2s ease-in-out; /* Smooth return to normal */
+	border-radius: 0.5rem; /* Rounded corners */
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a clean look */
+	background: #fff;
+}
+
+/* Image Hover Effect */
+.card-image {
+	position: absolute;
+	inset: 0; /* Cover the entire card */
+	background-size: cover; /* Ensure the image covers the card */
+	background-position: center; /* Center the image */
+	z-index: 5; /* Place the image above text */
+	opacity: 0; /* Hidden by default */
+	transition: opacity 0.3s ease-in-out; /* Smooth fade-in effect */
+}
+
+/* Show Image on Hover */
+.team-card:hover .card-image {
+	opacity: 1; /* Make the image visible */
+}
+
+/* Dim Text on Hover */
+.team-card:hover .relative.z-10 {
+	opacity: 0.2; /* Dim the text to emphasize the image */
+	transition: opacity 0.3s ease-in-out;
+}
+
+/* Text Content Styling */
+.team-card h3 {
+	font-size: 1.25rem; /* Slightly larger font for emphasis */
+	margin-bottom: 0.5rem;
+}
+
+.team-card p {
+	font-size: 1rem;
+	color: #555; /* Softer text color for readability */
+}
+
+.team-card ul {
+	margin-top: 1rem;
+	padding-left: 1.5rem;
+	list-style-type: disc;
+	color: #333; /* Darker text for list items */
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+	.team-card {
+		transition: transform 0.3s ease-in-out; /* Enhance on larger screens */
+	}
+}

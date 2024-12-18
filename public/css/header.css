@@ -1,0 +1,153 @@
+
+
+/* Apply the animation to the span */
+h1 span, .colorCycle {
+	-webkit-animation: colorCycle 5s infinite;
+	animation: colorCycle 5s infinite;
+}
+
+/* Keyframes for color animation */
+@keyframes colorCycle {
+	0% {
+		color: red;
+	}
+	33% {
+		color: orange;
+	}
+	66% {
+		color: white;
+	}
+	100% {
+		color: red; /* Loop back to the starting color */
+	}
+}
+
+/* Base styles for the navbar list items */
+.navLi {
+	position: relative;
+	list-style: none;
+	cursor: pointer;
+	transition: all 1000ms ease-in-out;
+}
+
+/*Basic Hover effect - text color transition*/
+.navLi:hover {
+	color: red;
+	transition: all 250ms ease-out;
+	transform: translateY(3px);
+}
+
+/* Pseudo-element for the bottom border */
+.navLi::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px; /* Adjust border thickness */
+	background: black;
+	transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+/* On hover, animate the border */
+.navLi:hover::after {
+	width: 100%; /* Expand border to full width */
+	background: red; /* Change color to red */
+}
+
+/* On hover out, shrink back and change color */
+.navLi::after {
+	animation: shrinkBack 0.5s ease forwards; /* Smooth reverse animation */
+}
+
+/* Base styles for hamburger and menu */
+#hamburger {
+	cursor: pointer;
+	z-index: 10; /* Ensures it stays above the menu */
+}
+
+#menu {
+	transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Hamburger menu behavior for smaller screens */
+@media (max-width: 976px) {
+	#hamburger {
+		display: flex; /* Show the hamburger menu button */
+	}
+
+	#menu {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 100vh; /* Full viewport height */
+		background: white;
+		transform: translateY(-100%); /* Hide menu by default */
+		opacity: 0;
+	}
+
+	#menu.open {
+		transform: translateY(0); /* Show menu */
+		opacity: 1;
+	}
+}
+
+/* Base Hamburger Menu Styling */
+#hamburger {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 24px;
+	cursor: pointer;
+	position: relative;
+	z-index: 10; /* Ensure it is above other elements */
+}
+
+#hamburger span {
+	display: block;
+	background: #333;
+	border-radius: 2px;
+	transition: all 0.4s ease; /* Smooth transitions */
+	transform-origin: center; /* Spans will rotate from their center */
+}
+
+/* Active State */
+#hamburger.active span:nth-child(1) {
+	transform: rotate(45deg) translate(5px, 5px); /* Top span forms top cross line */
+}
+
+#hamburger.active span:nth-child(2) {
+	opacity: 0; /* Middle span disappears */
+}
+
+#hamburger.active span:nth-child(3) {
+	transform: rotate(-45deg) translate(5px, -5px); /* Bottom span forms bottom cross line */
+}
+
+/*Hamburger Menu Media Query*/
+/*Hamburger Menu hidden on screen larger than 576px*/
+/* Media query for screens larger than 576px */
+@media (min-width: 976px) {
+	#hamburger {
+		display: none; /* Hide the hamburger menu */
+	}
+}
+
+.snap-down {
+	position: absolute;
+	bottom: -55px;
+	right: 0;
+	width: 576px;
+	background: #ffffff;
+}
+
+#mobile-menu {
+	height: calc(
+		100svh - 4rem
+	); /* Adjust for header height (16 = 4rem in Tailwind) */
+}
