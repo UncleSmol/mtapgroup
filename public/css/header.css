@@ -28,6 +28,7 @@ h1 span, .colorCycle {
 	list-style: none;
 	cursor: pointer;
 	transition: all 1000ms ease-in-out;
+	
 }
 
 /*Basic Hover effect - text color transition*/
@@ -68,6 +69,7 @@ h1 span, .colorCycle {
 
 #menu {
 	transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	
 }
 
 /* Hamburger menu behavior for smaller screens */

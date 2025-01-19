@@ -55,7 +55,6 @@
 .slide-animation {
 	display: flex;
 	width: 500%;
-
 	-webkit-animation: slide 25s infinite ease-in-out;
 	animation: slide 25s infinite ease-in-out;
 	-webkit-transition: transform 3s ease-in-out;
@@ -63,6 +62,7 @@
 	-ms-transition: transform 3s ease-in-out;
 	-o-transition: transform 3s ease-in-out;
 	transition: transform 3s ease-in-out;
+	animation-delay: 3s;
 }
 
 .slide-animation img {
