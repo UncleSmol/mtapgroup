@@ -44,3 +44,45 @@ document.querySelectorAll(".team-card").forEach((card) => {
 		card.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg)";
 	});
 });
+
+// Select all dropdown headers
+const dropdownHeaders = document.querySelectorAll('.dropdown-header');
+
+// Add click event listener to each header
+dropdownHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+        // Toggle active class on header
+        header.classList.toggle('active');
+        
+        // Get the associated content
+        const content = header.nextElementSibling;
+        
+        // Toggle active class on content
+        content.classList.toggle('active');
+        
+        // Toggle hidden class
+        content.classList.toggle('hidden');
+        
+        // Close other dropdowns
+        dropdownHeaders.forEach(otherHeader => {
+            if (otherHeader !== header) {
+                otherHeader.classList.remove('active');
+                const otherContent = otherHeader.nextElementSibling;
+                otherContent.classList.remove('active');
+                otherContent.classList.add('hidden');
+            }
+        });
+    });
+});
+
+// Optional: Close dropdown when clicking outside
+document.addEventListener('click', (event) => {
+    if (!event.target.closest('.service-dropdown')) {
+        dropdownHeaders.forEach(header => {
+            header.classList.remove('active');
+            const content = header.nextElementSibling;
+            content.classList.remove('active');
+            content.classList.add('hidden');
+        });
+    }
+});

@@ -68,3 +68,131 @@
 		transition: transform 0.3s ease-in-out; /* Enhance on larger screens */
 	}
 }
+
+/* Dropdown Container */
+.service-dropdown {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Dropdown Header Styling */
+.dropdown-header {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.dropdown-header:hover {
+    background-color: #f8fafc;
+}
+
+/* Rotate arrow when dropdown is active */
+.dropdown-header.active svg {
+    transform: rotate(180deg);
+}
+
+/* Dropdown Content Animation */
+.dropdown-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.dropdown-content.active {
+    max-height: 2000px; /* Adjust based on content */
+    opacity: 1;
+}
+
+/* Image Slider Animation */
+.slide-animation {
+    display: flex;
+    width: 400%;
+    animation: slide 20s infinite ease-in-out;
+}
+
+.slide-animation img {
+    width: 25%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0%, 23% {
+        transform: translateX(0);
+    }
+    25%, 48% {
+        transform: translateX(-25%);
+    }
+    50%, 73% {
+        transform: translateX(-50%);
+    }
+    75%, 98% {
+        transform: translateX(-75%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Course Cards Hover Effect */
+.bg-gray-50 {
+    transition: all 0.3s ease-in-out;
+}
+
+.bg-gray-50:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .dropdown-content {
+        max-height: none;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .slide-animation {
+        animation: none;
+    }
+    
+    .dropdown-content {
+        transition: none;
+    }
+}
+
+/* Card Shadow Effects */
+.service-dropdown {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-header:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Area Styling */
+.bg-gray-50 {
+    border: 1px solid #e5e7eb;
+}
+
+/* Typography Enhancements */
+.text-blue-600 {
+    color: #2563eb;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+/* Call to Action Button Effects */
+.inline-block.bg-blue-600 {
+    transition: all 0.3s ease;
+}
+
+.inline-block.bg-blue-600:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+}
